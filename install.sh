@@ -1,7 +1,7 @@
 #!/bin/bash
 
-mv /usr/lib/dab-rtlsdr-3 /usr/lib/dab-rtlsdr-3.org
-curl -L https://github.com/kan-ibal/raudio-dab-lite/raw/refs/heads/main/dab-rtlsdr-3 -o /usr/lib/dab-rtlsdr-3
+mv /usr/bin/dab-rtlsdr-3 /usr/bin/dab-rtlsdr-3.org
+curl -L https://github.com/kan-ibal/raudio-dab-lite/raw/refs/heads/main/dab-rtlsdr-3 -o /usr/bin/dab-rtlsdr-3
 
 
 sed -i 's|-b:a 160k \|-b:a 128k \|'  /srv/http/bash/dab-start.sh
